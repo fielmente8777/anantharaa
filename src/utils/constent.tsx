@@ -20,8 +20,8 @@ export const contact = {
   },
   callCta: `tel:+91xxxxxxxx`,
   WhatsappCta: `https://wa.me/+91xxxxxxxx?text=${enCodeText}`,
-  formDomain: "arohapalmsmandrem",
-  // formDomain: "testmulti", //for testing
+  // formDomain: "",
+  formDomain: "testmulti", //for testing
   formHid: "",
   // formHid: "",
 };

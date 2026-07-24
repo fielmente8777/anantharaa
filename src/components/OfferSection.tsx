@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react";
 import { landingPageData } from "@/app/(landing-page)/components/pageData";
 import { SectionWithContainer } from "./sectionComponants";
+import { usePathname } from "next/navigation";
 
 const OfferSection = () => {
+  const pathName = usePathname();
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
@@ -17,6 +19,10 @@ const OfferSection = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if(pathName === "/thank-you/"){
+    return null;
+  }
 
   return (
     <SectionWithContainer

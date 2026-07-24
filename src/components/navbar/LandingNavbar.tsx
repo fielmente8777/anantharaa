@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarIcon, WhatsAppIcon } from "../buttons/LinkButton";
 import { navData } from "./navData";
+import { usePathname } from "next/navigation";
 
 const LandingNavbar = () => {
+  const pathName = usePathname();
   // const scrollToSection = (id: string) => {
   //   const element = document.getElementById(id);
   //   if (element) {
@@ -11,6 +14,10 @@ const LandingNavbar = () => {
   //   }
   //   return;
   // };
+
+  if(pathName === "/thank-you/"){
+    return null;
+  }
 
   return (
     <header className="max_screen_width w-full bg-background">
