@@ -271,25 +271,29 @@ export const landingPageData = {
     title: "Loved by pilgrims and travellers.",
     reviews: [
       {
-        rating: "★★★★★",
         review:
-          "Perfect location right next to the temple. Rooms were spotless and the staff went out of their way to arrange our cab for Girivalam.",
-        name: "Priya S.",
-        location: "Chennai",
+          "We had an excellent stay at Ananthara Hotel, Tiruvannamalai. A special mention to the front office lady receptionist (unfortunately, I didn’t catch her name) for her warm welcome, professionalism, and helpful attitude. Heartfelt thanks to Sashi and Subhash for their exceptional guidance and support with the darshan arrangements. Their knowledge, patience, and clear instructions made the entire spiritual experience smooth, well-organized, and stress-free. The overall guest service was outstanding, and the team truly went above and beyond to ensure comfort and convenience. A memorable and pleasant stay—I would highly recommend this hotel and would be happy to visit again.",
+        name: "Himanshu Akode",
       },
       {
-        rating: "★★★★★",
         review:
-          "New, clean, and calm. Great value for what you get. Breakfast was simple and satisfying after our early morning temple visit.",
-        name: "Rahul M.",
-        location: "Bengaluru",
+          "Our stay at the Ananthara Hotel in Tiruvannamalai was nothing short of fantastic. From the moment we arrived, the warmth and professionalism of the staff made us feel right at home. We want to extend a huge thank you to the front desk team (Oviya, Subhas, & Rajesh) who truly made our visit seamless by providing incredible support with our darshan arrangements. Their local knowledge and patient guidance turned what could have been a stressful spiritual journey into a smooth, perfectly organized experience,and the rooms were well-maintained, clean, and designed for comfort, providing a peaceful retreat after a long day. The level of guest service here is outstanding",
+        name: "Charan veeracharyulu Dharanalakota",
       },
       {
-        rating: "★★★★★",
         review:
-          "The hill view from our room was breathtaking at sunrise. Truly a peaceful stay, will absolutely return.",
-        name: "Anita R.",
-        location: "Mumbai",
+          "We had a fantastic stay at Hotel Anantharaa. The location was at a convenient distance from the raja Gopuram of Annamalaiyar temple. The staff were incredibly welcoming and provided great service. The rooms were neat,clean and well-maintained. Overall highly recommended.",
+        name: "Ramprasadh Ragupathy",
+      },
+      {
+        review:
+          "Located in a prime area, this accommodation offers comfortable rooms and excellent service. The staff are professional, courteous, and always willing to help, making the stay truly enjoyable. It stands out as one of the decent places to stay and is definitely worth recommending. Keep up the great work and continue maintaining good standards.",
+        name: "deepti priya",
+      },
+      {
+        review:
+          "Rooms were pretty clean and spacious. Mr Subhash at reception was very kind and helpful. Need to be careful with the google maps to location as local police officials had made lot of restrictions to the vehicle entries. But Hotel staff guided us on how to reach the hotel.",
+        name: "Shiva Reddy",
       },
     ],
   },
