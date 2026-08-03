@@ -4,8 +4,8 @@ export const navData = {
   logo: "/logo.png",
 
   buttons: [
-    { label: "CALL NOW", href: contact.callCta },
-    { label: "BOOK now", href: contact.WhatsappCta },
+    { label: "Call Us", href: contact.callCta },
+    { label: "Book Now", href: contact.WhatsappCta },
   ],
 
   links: [

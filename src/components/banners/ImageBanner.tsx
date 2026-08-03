@@ -46,13 +46,13 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
                   className="font-primary text-4xl md:text-6xl/tight  text-white lg:max-w-6xl"
                   dangerouslySetInnerHTML={{ __html: title }}
                 ></h1>
-                <p className="text-[#FAF6F2A6] max-w-3xl mt-4">{description}</p>
+                <p className="text-white max-w-3xl mt-4">{description}</p>
               </div>
-              <div className="bg-white/40 w-fit ml-auto border border-white/10 backdrop-blur-xs p-6 rounded-[20px] lg:flex hidden flex-col gap-5">
+              <div className="bg-white/40 w-fit ml-auto border border-white/10 backdrop-blur-xs p-3 rounded-[20px] lg:flex hidden flex-col gap-4">
                 {highlights.map((highlight, index) => (
-                  <div key={index} className="flex flex-col gap-2">
+                  <div key={index} className="flex flex-col ">
                     <p className="text-white">{highlight.label}</p>
-                    <p className="text-white text-2xl font-primary">
+                    <p className="text-white text-xl font-primary">
                       {highlight.value}
                     </p>
                     <p className="text-white">{highlight.description}</p>
