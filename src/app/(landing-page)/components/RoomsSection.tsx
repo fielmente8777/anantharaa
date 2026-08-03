@@ -11,12 +11,13 @@ interface RoomsSectionProps {
   cards: {
     images: string[];
     location: string;
-    title: string;
-    description: string;
-    amenities: {
+    imageOnly?: boolean;
+    title?: string;
+    description?: string;
+    amenities?: {
       label: string;
     }[];
-    buttons: {
+    buttons?: {
       label: string;
       link: string;
     }[];
@@ -124,13 +125,13 @@ export const RoomsCard: React.FC<RoomsSectionProps["cards"][0]> = ({
   return (
     <div className="flex flex-col rounded-2xl overflow-hidden box-shadow">
       <div className="w-full relative aspect-4/3.5">
-        <Image src={images[0]} alt={title} fill className="object-cover" />
+        <Image src={images[0]} alt={title ?? "Room"} fill className="object-cover" />
       </div>
       <div className="flex flex-col gap-3 border border-[#DFD6C9] bg-white p-8 rounded-b-2xl">
         <p className="text-dark text-3xl font-primary">{title}</p>
         <p className="text-light max-lg:text-sm">{description}</p>
         <ul className="flex items-center gap-6 my-2">
-          {amenities.map((amenity, index) => (
+          {amenities?.map((amenity, index) => (
             <li key={index} className="text-light text-sm">
               {amenity.label}
             </li>
@@ -138,7 +139,7 @@ export const RoomsCard: React.FC<RoomsSectionProps["cards"][0]> = ({
         </ul>
         <div className="w-full h-px bg-[#DFD6C9] mb-3 mt-1" />
         <ul className="grid grid-cols-1 md:grid-cols-2 w-full gap-3 justify-center ">
-          {buttons.map((button, index) => (
+          {buttons?.map((button, index) => (
             <li key={index}>
               <LinkButton
                 href={button.link}
