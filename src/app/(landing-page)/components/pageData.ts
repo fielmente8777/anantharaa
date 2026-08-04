@@ -180,14 +180,14 @@ export const landingPageData = {
   location: "LOCATION 2: SONAGIRI 2BHK VILLA",
   imageOnly: true,
   images: [
-    "/img1.jpeg",
-    "/img2.jpeg",
+    "/img7.jpeg",
+    "/img8.jpeg",
     "/img3.jpeg",
     "/img4.jpeg",
     "/img5.jpeg",
     "/img6.jpeg",
-    "/img7.jpeg",
-    "/img8.jpeg",
+    "/img1.jpeg",
+    "/img2.jpeg",
   ],
   buttons: [
     {
