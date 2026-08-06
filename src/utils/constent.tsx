@@ -1,11 +1,10 @@
-export const enCodeText = encodeURIComponent(`Hi Aroha Palms Team,
+export const enCodeText = encodeURIComponent(`Hi Anantharaa Team,
 
-I'm interested in booking a stay at Aroha Palms.
+I'm interested in booking a stay at Anantharaa.
 
 Please share the best available options and rates.
 
 Thank you!`);
-
 
 export const contact = {
   email: "reserve@12345678.com",
