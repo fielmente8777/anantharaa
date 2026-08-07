@@ -9,6 +9,8 @@ import Call from "@/components/ContactButton/Call";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import Script from "next/script";
+import { WebProvider } from "@/context-api/WebContext";
+import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -36,12 +38,15 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning={true}>
-        <OfferSection />
-        <LandingNavbar />
-        {children}
-        <LandingFooter />
-        <Call callNumber={contact.phone[0]} />
-        <Whatsapp whatsAppNumber={contact.phone[0]} />
+        <WebProvider>
+          <OfferSection />
+          <LandingNavbar />
+          {children}
+          <LandingFooter />
+          <PopUpForm />
+          <Call callNumber={contact.phone[0]} />
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+        </WebProvider>
       </body>
 
       <Script id="chatbot-config" strategy="afterInteractive">

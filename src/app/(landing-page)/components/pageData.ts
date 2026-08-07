@@ -1,3 +1,5 @@
+import { contact } from "@/utils/constent";
+
 export const landingPageData = {
   offer: ["Direct Booking Offer: Save 15% + Free Breakfast"],
 
@@ -65,7 +67,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: "#form",
+        link: contact.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -96,7 +98,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: "#form",
+            link: contact.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -120,7 +122,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: "#form",
+            link: contact.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -144,7 +146,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: "#form",
+            link: contact.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -168,7 +170,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: "#form",
+            link: contact.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -176,30 +178,30 @@ export const landingPageData = {
           },
         ],
       },
-     {
-  location: "LOCATION 2: SONAGIRI 2BHK VILLA",
-  imageOnly: true,
-  images: [
-    "/img1.jpeg",
-    "/img2.jpeg",
-    "/img3.jpeg",
-    "/img4.jpeg",
-    "/img5.jpeg",
-    "/img6.jpeg",
-    "/img7.jpeg",
-    "/img8.jpeg",
-  ],
-  buttons: [
-    {
-      label: "Enquire Now",
-      link: "#form",
-    },
-    {
-      label: "Book Now",
-      link: "#form",
-    },
-  ],
-}
+      {
+        location: "LOCATION 2: SONAGIRI 2BHK VILLA",
+        imageOnly: true,
+        images: [
+          "/img7.jpeg",
+          "/img8.jpeg",
+          "/img3.jpeg",
+          "/img4.jpeg",
+          "/img5.jpeg",
+          "/img6.jpeg",
+          "/img1.jpeg",
+          "/img2.jpeg",
+        ],
+        buttons: [
+          {
+            label: "Enquire Now",
+            link: contact.WhatsappCta,
+          },
+          {
+            label: "Book Now",
+            link: "#form",
+          },
+        ],
+      },
     ],
   },
 
@@ -211,7 +213,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: "#form",
+        link: contact.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -284,7 +286,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: "#form",
+        link: contact.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -358,7 +360,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: "#form",
+        link: contact.WhatsappCta,
       },
       {
         label: "Book Now",
