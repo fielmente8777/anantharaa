@@ -41,8 +41,9 @@ export const footerData: FooterData = {
       title: "Locations",
       links: [
         {
-          title:
-            "48/252, Thiruvoodal St, Pavazhakundur, Tiruvannamalai, Annamalai R.F., Tamil Nadu 606601",
+          label: "252/48, Thiruvoodal Street, Thiruvannamalai - 606601",
+
+          href: contact.addressLink,
         },
       ],
     },

@@ -7,20 +7,19 @@ Please share the best available options and rates.
 Thank you!`);
 
 export const contact = {
-  email: "reserve@12345678.com",
+  email: "anantharaahotel@gmail.com",
   mapUrl: "",
-  phone: ["+91xxxxxxxx"],
-  address:
-    "48/252, Thiruvoodal St, Pavazhakundur, Tiruvannamalai, Annamalai R.F., Tamil Nadu 606601",
-  addressLink: "",
+  phone: ["+91 9403892144"],
+  address: "252/48, Thiruvoodal Street, Thiruvannamalai - 606601",
+  addressLink: "https://maps.app.goo.gl/p852cWXH46sjZEP48",
   socialMedia: {
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com/",
   },
   callCta: `tel:+91xxxxxxxx`,
-  WhatsappCta: `https://wa.me/+91xxxxxxxx?text=${enCodeText}`,
-  // formDomain: "",
-  formDomain: "testmulti", //for testing
+  WhatsappCta: `https://wa.me/+919403892144?text=${enCodeText}`,
+  formDomain: "hotelanantharaa10825728",
+  // formDomain: "testmulti", //for testing
   formHid: "",
   // formHid: "",
 };
