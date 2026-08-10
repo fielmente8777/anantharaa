@@ -31,9 +31,10 @@ const nextConfig: NextConfig = {
   },
 
   experimental: {
-    optimizePackageImports: ["lucide-react", "react-icons", "swiper"],
+    optimizePackageImports: ["react-datepicker", "axios", "swiper/react"],
 
     optimizeCss: true,
+    optimisticClientCache: true,
 
     scrollRestoration: true,
   },
