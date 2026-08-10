@@ -206,13 +206,13 @@ const Form1 = ({ gridView }: Props) => {
       onChange: handleChange,
       icon: <CalendarIcon />,
     },
-    {
-      name: "city",
-      label: "Location",
-      type: "dropdown",
-      value: formData.city || "",
-      icon: <LocationIcon />,
-    },
+    // {
+    //   name: "city",
+    //   label: "Location",
+    //   type: "dropdown",
+    //   value: formData.city || "",
+    //   icon: <LocationIcon />,
+    // },
   ];
   // useEffect(() => {
   //   if (submitSuccess) {
@@ -224,7 +224,7 @@ const Form1 = ({ gridView }: Props) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${gridView ? "flex flex-col gap-2" : "grid md:grid-cols-6 items-center gap-3.5 "} font-body px-4 bg-transparent  max-md:divide-y divide-p1`}
+      className={`${gridView ? "flex flex-col gap-2" : "grid md:grid-cols-5 items-center gap-3.5 "} font-body px-4 bg-transparent  max-md:divide-y divide-p1`}
     >
       {formFields.map((field, index) => (
         <React.Fragment key={index}>
@@ -249,20 +249,22 @@ const Form1 = ({ gridView }: Props) => {
                 wrapperClassName="w-full h-full !flex items-center"
               />
             </div>
-          ) : field.type === "dropdown" ? (
-            <div
-              className={`lg:bg-background flex items-center gap-2.5 lg:shadow border-light/30 lg:rounded-lg ${gridView ? "p-4" : "max-md:pb-4 max-md:pt-2 py-3 lg:px-2"}`}
-            >
-              <label className="text-secondary">{field.icon}</label>
-              <CustomDropdown
-                value={field.value}
-                onChange={handleLocationChange}
-                placeholder="Preferred Location"
-                options={locationOptions}
-                error={errors.city}
-              />
-            </div>
-          ) : field.type === "tel" ? (
+          ) 
+          // : field.type === "dropdown" ? (
+          //   <div
+          //     className={`lg:bg-background flex items-center gap-2.5 lg:shadow border-light/30 lg:rounded-lg ${gridView ? "p-4" : "max-md:pb-4 max-md:pt-2 py-3 lg:px-2"}`}
+          //   >
+          //     <label className="text-secondary">{field.icon}</label>
+          //     <CustomDropdown
+          //       value={field.value}
+          //       onChange={handleLocationChange}
+          //       placeholder="Preferred Location"
+          //       options={locationOptions}
+          //       error={errors.city}
+          //     />
+          //   </div>
+          // ) 
+          : field.type === "tel" ? (
             <div
               className={`bg-background flex items-center gap-2.5 lg:border-[0.5px] lg:shadow border-light/30 lg:rounded-lg ${gridView ? "p-4" : "max-md:pb-4 max-md:pt-2 py-3 lg:px-2"}`}
               key={index}

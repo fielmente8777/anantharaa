@@ -7,9 +7,9 @@ Please share the best available options and rates.
 Thank you!`);
 
 export const contact = {
-  email: "anantharaahotel@gmail.com",
+  email: "desk@anantharaahotel.com",
   mapUrl: "",
-  phone: ["+91 9403892144"],
+  phone: ["+919403892144"],
   address: "252/48, Thiruvoodal Street, Thiruvannamalai - 606601",
   addressLink: "https://maps.app.goo.gl/p852cWXH46sjZEP48",
   socialMedia: {
@@ -17,7 +17,7 @@ export const contact = {
     instagram: "https://www.instagram.com/",
   },
   callCta: `tel:+91xxxxxxxx`,
-  WhatsappCta: `https://wa.me/+919403892144?text=${enCodeText}`,
+  WhatsappCta: `https://wa.me/+919585999301?text=${enCodeText}`,
   formDomain: "hotelanantharaa10825728",
   // formDomain: "testmulti", //for testing
   formHid: "",

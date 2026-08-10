@@ -50,10 +50,10 @@ export const footerData: FooterData = {
     {
       title: "Contact",
       links: [
-        // {
-        //   label: "WhatsApp: " + contact.phone[0],
-        //   href: contact.WhatsappCta,
-        // },
+        {
+          label: "WhatsApp: " + contact.phone[0],
+          href: contact.WhatsappCta,
+        },
         {
           label: "Call: " + contact.phone[0],
           href: contact.callCta,
