@@ -78,11 +78,11 @@ export const landingPageData = {
 
   roomsSection: {
     tagline: "Rooms & Suites",
-    title: "Choose Between Our Two Beautiful Locations in Tiruvannamalai",
+    title: "Choose a room made for restful stays",
 
     cards: [
       {
-        location: "LOCATION 1: ANANTHARA HOTEL",
+       
         title: "Standard Twin",
         images: ["/Standard-Twin.png"],
         description:
@@ -107,7 +107,7 @@ export const landingPageData = {
         ],
       },
       {
-        location: "LOCATION 1: ANANTHARA HOTEL",
+       
         title: "Standard Double",
         description: "A cozy double bed in a bright, restful room.",
         images: ["/standard-double.png"],
@@ -131,7 +131,7 @@ export const landingPageData = {
         ],
       },
       {
-        location: "LOCATION 1: ANANTHARA HOTEL",
+        
         title: "Deluxe Triple",
         description: "Spacious room for three, perfect for small families.",
         images: ["/Deluxe-Triple.png"],
@@ -155,7 +155,7 @@ export const landingPageData = {
         ],
       },
       {
-        location: "LOCATION 1: ANANTHARA HOTEL",
+        
         title: "Hill View Triple",
         description: "Wake to serene views of Arunachala Hill.",
         images: ["/Hill-View-Triple.png"],
@@ -178,30 +178,7 @@ export const landingPageData = {
           },
         ],
       },
-      {
-        location: "LOCATION 2: SONAGIRI 2BHK VILLA",
-        imageOnly: true,
-        images: [
-          "/img7.jpeg",
-          "/img8.jpeg",
-          "/img3.jpeg",
-          "/img4.jpeg",
-          "/img5.jpeg",
-          "/img6.jpeg",
-          "/img1.jpeg",
-          "/img2.jpeg",
-        ],
-        buttons: [
-          {
-            label: "Enquire Now",
-            link: contact.WhatsappCta,
-          },
-          {
-            label: "Book Now",
-            link: "#form",
-          },
-        ],
-      },
+   
     ],
   },
 

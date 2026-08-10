@@ -10,7 +10,6 @@ interface RoomsSectionProps {
   title: string;
   cards: {
     images: string[];
-    location: string;
     imageOnly?: boolean;
     title?: string;
     description?: string;
@@ -30,24 +29,22 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
   cards,
 }) => {
   const locations = useMemo(
-    () => [...new Set(cards.map((card) => card.location))],
+    () => [...new Set(cards.map((card) => card))],
     [cards]
   );
 
-  const [selectedLocation, setSelectedLocation] = useState(locations[0] ?? "");
-
-  const filteredCards = cards.filter(
-    (card) => card.location === selectedLocation
-  );
+  const filteredCards = cards.filter((card) => card);
   return (
     <SectionWithContainer sectionClassName="border-y border-p1 bg-background2">
-      <div className="flex flex-col gap-8 lg:gap-12">
-        <div className="space-y-2 text-center">
+      <div className="flex flex-col gap-8 lg:gap-8">
+        <div className="space-y-2 text-start">
           <p className="uppercase text-p1 text-xs tracking-widest">{tagline}</p>
-          <SectionHeading title={title} />
+          <div className="max-w-[700px]">
+            <SectionHeading title={title} />
+          </div>
         </div>
         <div className="flex justify-center gap-4 flex-wrap">
-          {locations.map((location) => (
+          {/* {locations.map((location) => (
             <button
               key={location}
               onClick={() => setSelectedLocation(location)}
@@ -59,12 +56,12 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
             >
               {location}
             </button>
-          ))}
+          ))} */}
         </div>
-        {selectedLocation === "LOCATION 2: SONAGIRI 2BHK VILLA" ? (
-          <div className="flex flex-col gap-8">
-            {/* Images */}
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7">
+        {/* {selectedLocation === "LOCATION 2: SONAGIRI 2BHK VILLA" ? (
+          <div className="flex flex-col gap-8"> */}
+        {/* Images */}
+        {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7">
               {filteredCards.flatMap((card) =>
                 card.images.map((image, index) => (
                   <div
@@ -80,10 +77,10 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
                   </div>
                 ))
               )}
-            </div>
+            </div> */}
 
-            {/* Buttons */}
-            <div className="flex justify-center gap-4">
+        {/* Buttons */}
+        {/* <div className="flex justify-center gap-4">
               {filteredCards[0]?.buttons?.map((button, index) => (
                 <LinkButton
                   key={index}
@@ -98,15 +95,15 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
                   }`}
                 />
               ))}
-            </div>
-          </div>
-        ) : (
-          <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-            {filteredCards.map((card, index) => (
-              <RoomsCard key={index} {...card} />
-            ))}
-          </div>
-        )}
+            </div> */}
+        {/* </div>
+        ) :  */}
+
+        <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+          {filteredCards.map((card, index) => (
+            <RoomsCard key={index} {...card} />
+          ))}
+        </div>
       </div>
     </SectionWithContainer>
   );
@@ -115,7 +112,6 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
 export default RoomsSection;
 
 export const RoomsCard: React.FC<RoomsSectionProps["cards"][0]> = ({
-  location,
   title,
   description,
   amenities,
@@ -125,7 +121,12 @@ export const RoomsCard: React.FC<RoomsSectionProps["cards"][0]> = ({
   return (
     <div className="flex flex-col rounded-2xl overflow-hidden box-shadow">
       <div className="w-full relative aspect-4/3.5">
-        <Image src={images[0]} alt={title ?? "Room"} fill className="object-cover" />
+        <Image
+          src={images[0]}
+          alt={title ?? "Room"}
+          fill
+          className="object-cover"
+        />
       </div>
       <div className="flex flex-col gap-3 border border-[#DFD6C9] bg-white p-4 rounded-b-2xl">
         <p className="text-dark text-3xl font-primary">{title}</p>
