@@ -315,23 +315,23 @@ export const landingPageData = {
       },
       {
         q: "Do you offer free cancellation?",
-        a: "",
+        a: "Yes, Cancellation is available 24 hours prior check-in time.",
       },
       {
         q: "Is breakfast included?",
-        a: "",
+        a: "We don’t have breakfast at this time. It’s European Plan. But there are multiple options right next to the hotel and around within 5 minutes walk.",
       },
       {
         q: "Do you help with Girivalam or local cabs?",
-        a: "",
+        a: "Yes, we have empanelled auto/ cabs to enable girivalam tour and local site seeings",
       },
       {
         q: "Is parking available?",
-        a: "",
+        a: "Yes, we have a dedicated parking  at basement and adjacent to the hotel.",
       },
       {
         q: "What are the check in and check out times?",
-        a: "",
+        a: "Check in - 2 PM, Check out - 12 Noon",
       },
     ],
     buttons: [
