@@ -78,7 +78,7 @@ export const landingPageData = {
 
   roomsSection: {
     tagline: "Rooms & Suites",
-    title: "Choose a room made for restful stays",
+    title: "Choose a room made for restful stays starting from 2299/-",
 
     cards: [
       {
