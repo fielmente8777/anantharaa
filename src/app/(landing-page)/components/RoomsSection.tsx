@@ -39,7 +39,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({
       <div className="flex flex-col gap-8 lg:gap-8">
         <div className="space-y-2 text-start">
           <p className="uppercase text-p1 text-xs tracking-widest">{tagline}</p>
-          <div className="max-w-[700px]">
+          <div className="max-w-3xl">
             <SectionHeading title={title} />
           </div>
         </div>
