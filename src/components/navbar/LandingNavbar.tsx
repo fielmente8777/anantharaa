@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarIcon, WhatsAppIcon } from "../buttons/LinkButton";
+import { CalendarIcon, CallIcon, WhatsAppIcon } from "../buttons/LinkButton";
 import { navData } from "./navData";
 import { usePathname } from "next/navigation";
 
@@ -62,7 +62,7 @@ const LandingNavbar = () => {
                 >
                   {index === 0 ? (
                     <span className="">
-                      <WhatsAppIcon />
+                      <CallIcon/>
                     </span>
                   ) : (
                     <span className="">
