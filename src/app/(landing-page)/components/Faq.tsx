@@ -30,7 +30,7 @@ const Faq: React.FC<FaqProps> = ({
           <p className="uppercase text-p1 text-xs tracking-widest">{tagline}</p>
           <SectionHeading title={title} />
           <p className="text-light">{description}</p>
-          <ul className="lg:grid hidden grid-cols-1 md:grid-cols-2 w-full gap-2 max-w-sm mt-4">
+          <ul className="lg:grid hidden grid-cols-1 md:grid-cols-2 justify-center items-center gap-2 max-w-sm mt-4">
             {buttons.map((button, index) => (
               <li key={index}>
                 <LinkButton
