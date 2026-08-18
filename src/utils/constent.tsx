@@ -23,6 +23,12 @@ export const contact = {
   formHid: "",
   // formHid: "",
 };
+export const contact2 = {
+  phone: "+91XXXXXXXXXX",
+  callCta: "tel:+91XXXXXXXXXX",
+  WhatsappCta: "https://wa.me/91XXXXXXXXXX",
+  email:"reserve@12345678.com",
+};
 
 interface data_Type {
   name: string;

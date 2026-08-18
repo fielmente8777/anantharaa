@@ -3,13 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "../sectionComponants";
-import { footerData } from "./footerdata";
+import { footerData, footerData2 } from "./footerdata";
 
 const LandingFooter = () => {
   const pathName = usePathname();
   if (pathName === "/thank-you/") {
     return null;
   }
+  const data =
+    pathName.replace(/\/$/, "") === "/lp-2" ? footerData2 : footerData;
   return (
     <footer className="max_screen_width bg-p2 text-white">
       <Container>
@@ -20,7 +22,7 @@ const LandingFooter = () => {
                   w-35 aspect-[4/2.35] md:w-58 bg-white`}
             >
               <Image
-                src={footerData.logo}
+                src={data.logo}
                 alt="logo"
                 fill
                 sizes="100%"
@@ -29,7 +31,7 @@ const LandingFooter = () => {
             </div>
           </div>
 
-          {footerData.lists.map((list, index) => (
+          {data.lists.map((list, index) => (
             <div className={` flex flex-col gap-4`} key={index}>
               <h2
                 className="uppercase text-white/60 tracking-widest"

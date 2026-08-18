@@ -1,4 +1,4 @@
-import { contact } from "@/utils/constent";
+import { contact, contact2 } from "@/utils/constent";
 
 interface FooterData {
   logo: string;
@@ -62,6 +62,54 @@ export const footerData: FooterData = {
         {
           label: contact.email,
           href: "mailto:" + contact.email,
+        },
+      ],
+    },
+  ],
+};
+export const footerData2: FooterData = {
+  logo: "/footer.png",
+
+  cta: [
+    {
+      label: "CALL NOW",
+      href: contact2.callCta,
+    },
+    {
+      label: "ENQUIRE NOW",
+      href: contact2.WhatsappCta,
+    },
+    {
+      label: "BOOK NOW",
+      href: "#form",
+    },
+  ],
+
+  lists: [
+    {
+      title: "Location",
+      links: [
+        {
+          label: "Sonagiri, Tamil Nadu 606601",
+          href: contact.addressLink,
+        },
+      ],
+    },
+
+    {
+      title: "Contact",
+      links: [
+        {
+          label: "WhatsApp: " + contact2.phone,
+          href: contact2.WhatsappCta,
+        },
+        {
+          label: "Call: " + contact2.phone,
+          href: contact2.callCta,
+        },
+        {
+          label: contact2.email,
+          href: "mailto:" + contact2.email,
         },
       ],
     },
