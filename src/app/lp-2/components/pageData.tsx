@@ -20,7 +20,7 @@ export const landingPageData = {
       "23 peaceful rooms, warm hospitality, and everything you need for a comfortable temple visit, starting from ₹1,899/night.",
     benefits:
       "Save 15% when you book direct · No prepayment · Free cancellation",
-    image: "/bnr.png",
+    image: "/lp-2/img1.jpg",
     highlights: [
       {
         label: "Rating",
@@ -76,8 +76,8 @@ export const landingPageData = {
 
     cards: [
       {
-        title: "Artha House",
-        images: ["/artha-house.jpg"],
+        title: "Arch House",
+        images: ["/lp-2/img2.jpg"],
         description:
           "Colonial-style villa with an Arunachala, facing arched verandah, red-oxide floors and curated art. Best for families and multi-generational groups.",
 
@@ -109,7 +109,7 @@ export const landingPageData = {
 
       {
         title: "Tree House",
-        images: ["/tree-house.jpg"],
+        images: ["/lp-2/img3.jpg"],
         description:
           "Rustic villa wrapped in a forest garden, with a green private sit-out. Best for couples, wellness stays and quiet workations.",
 
@@ -141,54 +141,9 @@ export const landingPageData = {
     ],
   },
 
-  whyAnantharaaSection: {
-    tagline: "Why Anantharaa",
-    title: "Care that feels genuine.",
-    description:
-      "Hospitality starts with kindness. From the moment you arrive, our team is here, clean spaces, calm surroundings, and helpful service.",
-    buttons: [
-      {
-        label: "Enquire Now",
-        link: contact.WhatsappCta,
-      },
-      {
-        label: "Book Now",
-        link: "#form",
-      },
-    ],
-    features: [
-      {
-        image: "/step-from-temple.png",
-        category: "Location",
-        title: "Steps from the Temple",
-        description:
-          "A 2-minute walk to Annamalaiyar Temple and the Girivalam path.",
-      },
-      {
-        image: "/24x7-guest-assistance.png",
-        category: "Homely",
-        title: "24×7 Guest Assistance",
-        description:
-          "Round-the-clock support so your stay is smooth at any hour.",
-      },
-      {
-        image: "/standard-double.png",
-        category: "Wellness",
-        title: "Clean and Hygienic Rooms",
-        description: "Well-maintained rooms with strict hygiene standards.",
-      },
-      {
-        image: "/travel-and-cab.png",
-        category: "Simplicity",
-        title: "Travel and Cab Assistance",
-        description:
-          "Reliable cab arrangements for local sightseeing & nearby trips.",
-      },
-    ],
-  },
-
+ 
   locationSection: {
-    image: "/Overlay-Shadow.png",
+    image: "/lp-2/img4.jpg",
 
     tagline: "Girivalam starts here",
 

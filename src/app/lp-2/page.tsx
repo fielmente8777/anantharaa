@@ -43,7 +43,7 @@ export default function LandingPage() {
       </SectionWithContainer>
       <About {...landingPageData.aboutSection} />
       <Room {...landingPageData.roomsSection} />
-      <SectionWithContainer containerClassName="grid lg:hidden grid-cols-2 gap-4">
+      {/* <SectionWithContainer containerClassName="grid lg:hidden grid-cols-2 gap-4">
         {landingPageData.hero.highlights.map((highlight, index) => (
           <div
             key={index}
@@ -57,7 +57,7 @@ export default function LandingPage() {
             />
           </div>
         ))}
-      </SectionWithContainer>
+      </SectionWithContainer> */}
       {/* <WhyAnantharaa {...landingPageData.whyAnantharaaSection} /> */}
       <Place {...landingPageData.locationSection} />
       <Amenities {...landingPageData.amenitiesSection} />

@@ -24,13 +24,13 @@ const Amenities = ({
       sectionClassName="bg-background"
       containerClassName="py-16 md:py-20 lg:py-24"
     >
-      <div className="mx-auto max-w-[1080px]">
+      <div className="mx-auto max-w-5xl">
         <div className="mb-8">
-          <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-p1">
+          <p className="mb-3 text-[11px] uppercase text-p1">
             {tagline}
           </p>
 
-          <h2 className="font-primary text-3xl leading-tight text-[#241610] md:text-4xl lg:text-[42px]">
+          <h2 className="font-primary text-3xl  text-[#241610] md:text-4xl lg:text-5xl">
             {title}
           </h2>
         </div>
@@ -45,14 +45,14 @@ const Amenities = ({
                 {amenity.icon}
               </div>
 
-              <p className="mt-5 text-xs text-[#40362F]">
+              <p className="mt-5 text-sm text-[#40362F]">
                 {amenity.label}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="mt-5 text-[10px] leading-5 text-[#80766D]">
+        <p className="mt-5 text-xs text-[#80766D]">
           {note}
         </p>
       </div>

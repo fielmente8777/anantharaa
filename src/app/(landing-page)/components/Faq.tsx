@@ -26,7 +26,7 @@ const Faq: React.FC<FaqProps> = ({
   return (
     <SectionWithContainer sectionClassName="border-y border-p1 bg-background2">
       <div className="grid lg:grid-cols-[1.1fr_1fr] grid-cols-1 gap-8">
-        <div className="flex flex-col gap-2">
+        <div className="lg:sticky lg:top-24 lg:self-start flex flex-col gap-2">
           <p className="uppercase text-p1 text-xs tracking-widest">{tagline}</p>
           <SectionHeading title={title} />
           <p className="text-light">{description}</p>

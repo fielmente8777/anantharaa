@@ -51,7 +51,26 @@ const About = ({ tagline, title, description, buttons }: AboutProps) => {
             </li>
           ))}
         </ul> */}
-        <ul className="hidden mt-8 lg:flex items-center justify-center gap-2">
+            <ul className=" hidden mt-8 lg:flex items-center gap-4 justify-center ">
+                {buttons.map((button, index) => (
+                  <li key={index}>
+                    <LinkButton
+                      href={button.link}
+                      label={button.label}
+                      whatsAppIcon={index === 0}
+                      calendarIcon={index === 1}
+                      className={`rounded-md w-full justify-center
+                    ${
+                      index === 0
+                        ? "border border-primary bg-transparent text-p1"
+                        : "bg-p1 text-white px-8 py-2 "
+                    }
+                    `}
+                    />
+                  </li>
+                ))}
+              </ul>
+        {/* <ul className="hidden mt-8 lg:flex items-center justify-center gap-2">
           {buttons.map((button, index) => (
             <li key={index}>
               <LinkButton
@@ -67,7 +86,7 @@ const About = ({ tagline, title, description, buttons }: AboutProps) => {
               />
             </li>
           ))}
-        </ul>
+        </ul> */}
         <ul className="grid lg:hidden grid-cols-1 md:grid-cols-2 w-full gap-2 max-w-sm mt-4">
           {buttons.map((button, index) => (
             <li key={index}>

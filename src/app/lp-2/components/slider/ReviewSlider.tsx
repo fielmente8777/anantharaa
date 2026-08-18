@@ -52,10 +52,10 @@ const ReviewSlider: React.FC<{
                 <p className="text-sm font-medium text-[#241610]">
                   {item.name}
                 </p>
-
+{/* 
                 <p className="mt-0.5 text-xs text-[#80766D]">
                   {item.location}
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

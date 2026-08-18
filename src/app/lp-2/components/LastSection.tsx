@@ -11,7 +11,7 @@ interface FinalCtaProps {
 
 const LastSection: React.FC<FinalCtaProps> = ({ title, description }) => {
   return (
-    <Section defaultPadding={false} className="w-full bg-dark">
+    <Section defaultPadding={false} className="w-full bg-dark border-b border-white">
       <Container>
         <div className="flex flex-col items-center px-4 py-16 text-center md:py-20 lg:py-24">
           <p
