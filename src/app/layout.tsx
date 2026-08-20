@@ -11,6 +11,7 @@ import { contact } from "@/utils/constent";
 import Script from "next/script";
 import { WebProvider } from "@/context-api/WebContext";
 import PopUpForm from "@/components/pop-up/PopUpForm";
+import Image from "next/image";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -38,7 +39,35 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
-        <meta name="google-site-verification" content="6jRyolqv3p5VzdTJbW0a8zwU6WQR5_G0_sbCN5GNS7o" />
+        <meta
+          name="google-site-verification"
+          content="6jRyolqv3p5VzdTJbW0a8zwU6WQR5_G0_sbCN5GNS7o"
+        />
+
+        {/* <!-- Meta Pixel Code --> */}
+        <Script id="MetaPixel" strategy="afterInteractive">
+          {`!function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1130001726027102');
+            fbq('track', 'PageView');`}
+        </Script>
+        <noscript>
+          <Image
+            height="1"
+            width="1"
+            alt="fb-pixel"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1130001726027102&ev=PageView&noscript=1"
+          />
+        </noscript>
+        {/* <!-- End Meta Pixel Code --> */}
+
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-7S404VBY8W"
