@@ -20,7 +20,7 @@ interface Props {
 }
 const locationOptions = [
   { value: "ananthara", label: "ANANTHARA HOTEL" },
-  { value: "sonagiri ", label: " SONAGIRI 2BHK VILLA" },
+  { value: "sonagiri", label: "SONAGIRI 2BHK VILLA" },
 ];
 interface CustomDropdownProps {
   value: string;
