@@ -33,7 +33,7 @@ const OfferSection = () => {
           : "relative"
       }`}
     >
-      <p className="text-center text-white">
+      <p className="text-center text-white text-sm md:text-[16px]">
         {landingPageData.offer[0]}
       </p>
     </SectionWithContainer>

@@ -34,20 +34,26 @@ const Place: React.FC<LocationSectionProps> = ({
     <SectionWithContainer
       defaultPadding={false}
       sectionClassName="bg-p1"
-      containerClassName="py-16 md:py-20"
+      containerClassName="py-10 md:py-16"
     >
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
         {/* LEFT CONTENT */}
         <div className="flex flex-col">
           {/* Tagline */}
-          <p className="mb-4 text-[11px] uppercase text-white/80">
-            {tagline}
-          </p>
+          <p className="mb-4 text-[11px] uppercase text-white/80 ">{tagline}</p>
 
           {/* Title */}
           <h2 className="max-w-[560px] font-primary text-4xl text-white md:text-5xl lg:text-[48px]">
             {title}
           </h2>
+          <div className="relative mt-8 aspect-[1.24] w-full overflow-hidden rounded-2xl lg:hidden">
+            <Image
+              src={image}
+              alt="Girivalam Road, Tiruvannamalai"
+              fill
+              className="object-cover"
+            />
+          </div>
 
           {/* Description */}
           <p className="mt-7 max-w-[560px] text-sm leading-6 text-white/75 md:text-[16px]">
@@ -72,7 +78,7 @@ const Place: React.FC<LocationSectionProps> = ({
 
           {/* Location */}
           <div className="mt-5 flex items-center gap-2 text-sm text-white/70">
-            <FillLocationIcon/>
+            <FillLocationIcon />
             <span>{location}</span>
           </div>
 
@@ -102,29 +108,29 @@ const Place: React.FC<LocationSectionProps> = ({
               />
             ))}
           </div> */}
-           <ul className="grid grid-cols-1 hidden md:grid-cols-2 max-w-sm gap-4 justify-center ">
-                {buttons.map((button, index) => (
-                  <li key={index}>
-                    <LinkButton
-                      href={button.link}
-                      label={button.label}
-                      whatsAppIcon={index === 0}
-                      calendarIcon={index === 1}
-                      className={`rounded-md w-full justify-center
+          <ul className="hidden md:grid grid-cols-2 max-w-sm gap-4 mt-4 justify-center ">
+            {buttons.map((button, index) => (
+              <li key={index}>
+                <LinkButton
+                  href={button.link}
+                  label={button.label}
+                  whatsAppIcon={index === 0}
+                  calendarIcon={index === 1}
+                  className={`rounded-md w-full justify-center
                     ${
                       index === 0
                         ? "bg-white text-p1 "
                         : "border border-white bg-transparent text-white"
                     }
                     `}
-                    />
-                  </li>
-                ))}
-              </ul>
+                />
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative w-full overflow-hidden rounded-2xl aspect-[1.24]">
+        <div className="relative hidden md:block w-full overflow-hidden rounded-2xl aspect-[4.75/4.2]">
           <Image
             src={image}
             alt="Girivalam Road, Tiruvannamalai"
@@ -132,8 +138,8 @@ const Place: React.FC<LocationSectionProps> = ({
             className="object-cover"
           />
         </div>
-             {/* Buttons */}
-          {/* <div className="mt-8 lg:hidden flex items-center gap-3">
+        {/* Buttons */}
+        {/* <div className="mt-8 lg:hidden flex items-center gap-3">
             {buttons.map((button, index) => (
               <LinkButton
                 key={button.label}
@@ -158,25 +164,25 @@ const Place: React.FC<LocationSectionProps> = ({
               />
             ))}
           </div> */}
-            <ul className="grid grid-cols-1 lg:hidden md:grid-cols-2 max-w-sm gap-4 justify-center ">
-                {buttons.map((button, index) => (
-                  <li key={index}>
-                    <LinkButton
-                      href={button.link}
-                      label={button.label}
-                      whatsAppIcon={index === 0}
-                      calendarIcon={index === 1}
-                      className={`rounded-md w-full justify-center
+        <ul className="grid grid-cols-1 lg:hidden md:grid-cols-2 max-w-sm gap-4 justify-center ">
+          {buttons.map((button, index) => (
+            <li key={index}>
+              <LinkButton
+                href={button.link}
+                label={button.label}
+                whatsAppIcon={index === 0}
+                calendarIcon={index === 1}
+                className={`rounded-md w-full justify-center
                     ${
                       index === 0
                         ? "bg-white text-p1 "
                         : "border border-white bg-transparent text-white"
                     }
                     `}
-                    />
-                  </li>
-                ))}
-              </ul>
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </SectionWithContainer>
   );

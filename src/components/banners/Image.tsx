@@ -26,7 +26,7 @@ const ImageB: React.FC<ImageBannerProps> = ({
   return (
     <Section
       defaultPadding={false}
-      className="relative w-full lg:aspect-16/8 aspect-[4/5.2] overflow-hidden"
+      className="relative w-full lg:aspect-16/8 aspect-[4/5.75] overflow-hidden"
     >
       <Image src={image} alt={title} fill className="object-cover" />
       <div className="absolute inset-0 z-10 bg-black/40 " />
@@ -36,7 +36,7 @@ const ImageB: React.FC<ImageBannerProps> = ({
           <div className="flex flex-col gap-6 max-md:gap-30">
             <div className="grid lg:grid-cols-[1.2fr_1fr] grid-cols-1">
               <div className="space-y-2 w-full">
-                <p className="flex items-center max-lg:text-[10px] gap-2 text-sm text-white w-fit border border-primary py-1.5 px-3 rounded-full uppercase tracking-widest">
+                <p className="flex bg-white/20 backdrop-blur-2xl  items-center max-lg:text-[10px] gap-2 text-sm text-white w-fit border border-primary py-1.5 px-3 rounded-full uppercase tracking-widest">
                   <span>
                     <DotIcon />
                   </span>

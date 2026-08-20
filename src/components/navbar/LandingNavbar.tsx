@@ -23,13 +23,13 @@ const LandingNavbar = () => {
     <header className="max_screen_width w-full bg-background">
       {/* TOP BAR */}
       <nav className="max_width">
-        <div className="flex py-4 w-full items-center justify-between">
+        <div className="flex py-1 md:py-3 w-full items-center justify-between">
           {/* LOGO */}
           <div>
-            <div className="relative aspect-[4/2.22] w-40 md:w-45">
+            <div className="relative aspect-[2.2/1.25] md:aspect-[4/2.25] w-40 md:w-45">
               <Image
                 src={navData.logo}
-                alt="The Acacia Hotel Logo"
+                alt="The Anantharaa Hotel Logo"
                 fill
                 priority
                 className="object-cover rounded-md"

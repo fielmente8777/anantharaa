@@ -13,19 +13,20 @@ const LastSection: React.FC<FinalCtaProps> = ({ title, description }) => {
   return (
     <Section defaultPadding={false} className="w-full bg-dark border-b border-white">
       <Container>
-        <div className="flex flex-col items-center px-4 py-16 text-center md:py-20 lg:py-24">
+        <div className="flex flex-col items-center px-4 py-10 text-center md:py-20 lg:py-24">
           <p
-            className="text-white/85  uppercase"
+            className="text-white/85 mb-4 md:mb-0 uppercase text-sm md:text-[16px] "
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <SectionHeading
+            titleClassName="text-[22px] md:text-3xl"
             title={title}
             titleColor="white"
             wrapperClassName="max-w-7xl"
           />
 
           <div
-            className="bg-white/30 border  max-lg:hidden border-white/40 backdrop-blur-xs py-6 px-1.5 rounded-[20px] mt-20 flex flex-col gap-5"
+            className="bg-white/30 border max-lg:hidden border-white/40 backdrop-blur-xs py-6 px-1.5 rounded-[20px] mt-20 flex flex-col gap-5"
             id="form"
           >
             <Form1 />

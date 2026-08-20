@@ -50,7 +50,7 @@ const Room: React.FC<RoomsSectionProps> = ({
           </div>
 
           {/* Cards */}
-          <div className="grid w-full grid-cols-1 gap-5 md:gap-6 lg:grid-cols-2 lg:gap-4">
+          <div className="grid w-full grid-cols-1 gap-5 md:gap-6 lg:grid-cols-2">
             {filteredCards.map((card, index) => (
               <RoomsCard key={index} {...card} />
             ))}
@@ -153,7 +153,7 @@ export const RoomsCard: React.FC<
         </p>
 
         {/* Amenities */}
-        <ul className="mt-3 space-y-1.5 sm:mt-4 sm:space-y-2">
+        <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-2">
           {amenities?.map((amenity, index) => (
             <li
               key={index}
@@ -181,8 +181,7 @@ export const RoomsCard: React.FC<
             border-t
             border-[#DFD6C9]
             pt-3
-            sm:mt-auto
-            sm:pt-4
+            md:pt-4
           "
         >
           {/* Mobile: price above buttons */}

@@ -305,5 +305,16 @@ testimonials: {
     ],
 
     note: "Check-in 11:00 AM · Check-out 12:00 Noon · Pets case-by-case, please ask before booking.",
+
+        buttons: [
+      {
+        label: "Enquire Now",
+        link: contact.WhatsappCta,
+      },
+      {
+        label: "Book Now",
+        link: "#form",
+      },
+    ],
   },
 };
