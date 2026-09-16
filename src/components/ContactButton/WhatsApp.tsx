@@ -25,4 +25,5 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
   );
 }
 
+
 export default Whatsapp;
