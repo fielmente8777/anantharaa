@@ -1,4 +1,4 @@
-import { contact } from "@/utils/constent";
+import { contact, contact2 } from "@/utils/constent";
 import {
   AirIcon,
   BathIcon,
@@ -61,7 +61,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: contact.WhatsappCta,
+        link: contact2.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -98,7 +98,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: contact.WhatsappCta,
+            link: contact2.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -130,7 +130,7 @@ export const landingPageData = {
         buttons: [
           {
             label: "Enquire Now",
-            link: contact.WhatsappCta,
+            link: contact2.WhatsappCta,
           },
           {
             label: "Book Now",
@@ -176,7 +176,7 @@ export const landingPageData = {
     buttons: [
       {
         label: "Enquire Now",
-        link: contact.WhatsappCta,
+        link: contact2.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -250,7 +250,7 @@ testimonials: {
     buttons: [
       {
         label: "Enquire Now",
-        link: contact.WhatsappCta,
+        link: contact2.WhatsappCta,
       },
       {
         label: "Book Now",
@@ -309,7 +309,7 @@ testimonials: {
         buttons: [
       {
         label: "Enquire Now",
-        link: contact.WhatsappCta,
+        link: contact2.WhatsappCta,
       },
       {
         label: "Book Now",
