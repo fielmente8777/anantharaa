@@ -90,8 +90,8 @@ export const footerData2: FooterData = {
       title: "Location",
       links: [
         {
-          label: "Sonagiri, Tamil Nadu 606601",
-          href: contact.addressLink,
+          label: "167&1/168, Girivalam Rd, Siva nagar, Tiruvannamalai, Tamil Nadu 606603",
+          href: contact2.addressLink,
         },
       ],
     },

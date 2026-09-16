@@ -24,10 +24,12 @@ export const contact = {
   // formHid: "",
 };
 export const contact2 = {
-  phone: "+91XXXXXXXXXX",
-  callCta: "tel:+91XXXXXXXXXX",
-  WhatsappCta: "https://wa.me/91XXXXXXXXXX",
-  email:"reserve@12345678.com",
+  phone: "+917830603080",
+  callCta: "tel:+917830603080",
+  WhatsappCta: "https://wa.me/917830603080",
+  email:"sonagirihomestay@gmail.com",
+   addressLink: "https://maps.app.goo.gl/cpPjmnyigs55jrkU7",
+
 };
 
 interface data_Type {
