@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Cormorant_Garamond, Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import LandingFooter from "@/components/footer/LandingFooter";
@@ -23,6 +23,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Anantharaa",
   description: "",
@@ -36,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${inter.variable} ${cormorant.variable} h-full antialiased`}
     >
       <head>
         <meta
@@ -107,8 +113,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
           <LandingFooter />
           <PopUpForm />
-          <Call callNumber={contact.phone[0]} />
-          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <Call  />
+          <Whatsapp />
         </WebProvider>
       </body>
 

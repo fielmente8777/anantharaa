@@ -15,7 +15,7 @@ const LandingNavbar = () => {
   //   return;
   // };
 
-  if(pathName === "/thank-you/"){
+  if (pathName === "/thank-you/") {
     return null;
   }
 
@@ -25,7 +25,7 @@ const LandingNavbar = () => {
       <nav className="max_width">
         <div className="flex py-1 md:py-3 w-full items-center justify-between">
           {/* LOGO */}
-          <div>
+          {/* <div>
             <div className="relative aspect-[2.2/1.25] md:aspect-[4/2.25] w-40 md:w-45">
               <Image
                 src={navData.logo}
@@ -35,6 +35,24 @@ const LandingNavbar = () => {
                 className="object-cover rounded-md"
               />
             </div>
+          </div> */}
+          {/* LOGO */}
+          <div>
+            {pathName === "/lp-2/" ? (
+              <h1 className="text-3xl md:text-4xl font-secondary text-[#6C594F] tracking-widest">
+                SONAGIRI
+              </h1>
+            ) : (
+              <div className="relative aspect-[2.2/1.25] md:aspect-[4/2.25] w-40 md:w-45">
+                <Image
+                  src={navData.logo}
+                  alt="The Anantharaa Hotel Logo"
+                  fill
+                  priority
+                  className="object-cover rounded-md"
+                />
+              </div>
+            )}
           </div>
           {/* nav */}
           {/* <ul className="lg:flex border hidden border-white/15 bg-white/10 backdrop-blur-lg  rounded-full items-center  ml-36 w-fit nav">
@@ -62,7 +80,7 @@ const LandingNavbar = () => {
                 >
                   {index === 0 ? (
                     <span className="">
-                      <CallIcon/>
+                      <CallIcon />
                     </span>
                   ) : (
                     <span className="">

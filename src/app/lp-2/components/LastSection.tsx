@@ -37,7 +37,7 @@ const LastSection: React.FC<FinalCtaProps> = ({ title, description }) => {
               }}
             />
           </div>
-        </div>npm run 
+        </div>
 
 
       </Container>

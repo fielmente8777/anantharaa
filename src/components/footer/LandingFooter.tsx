@@ -10,14 +10,16 @@ const LandingFooter = () => {
   if (pathName === "/thank-you/") {
     return null;
   }
-  const data =
-    pathName.replace(/\/$/, "") === "/lp-2" ? footerData2 : footerData;
+  const isLp2 = pathName.replace(/\/$/, "") === "/lp-2";
+  const data = isLp2 ? footerData2 : footerData;
+  // const data =
+  //   pathName.replace(/\/$/, "") === "/lp-2" ? footerData2 : footerData;
   return (
     <footer className="max_screen_width bg-p2 text-white">
       <Container>
         <div className="grid md:py-14 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_.7fr_.5fr] gap-12 md:gap-16">
           <div className=" flex flex-col w-full lg:max-w-xl gap-6">
-            <div
+            {/* <div
               className={`relative 
                   w-35 aspect-[4/2.35] md:w-58 bg-white`}
             >
@@ -28,6 +30,25 @@ const LandingFooter = () => {
                 sizes="100%"
                 className="object-cover"
               />
+            </div> */}
+            <div
+              className={`relative w-35 aspect-[4/2.35] md:w-58 ${
+                isLp2 ? "" : "bg-white"
+              }`}
+            >
+              {isLp2 ? (
+                <h2 className="font-secondary text-[#F7F3EB] text-3xl md:text-4xl tracking-[0.16em] font-medium whitespace-nowrap">
+                  SONAGIRI
+                </h2>
+              ) : (
+                <Image
+                  src={data.logo}
+                  alt="logo"
+                  fill
+                  sizes="100%"
+                  className="object-cover"
+                />
+              )}
             </div>
           </div>
 

@@ -2,6 +2,7 @@ import { contact, contact2 } from "@/utils/constent";
 
 interface FooterData {
   logo: string;
+  logoText?: string;
 
   cta: {
     label: string;
@@ -69,6 +70,7 @@ export const footerData: FooterData = {
 };
 export const footerData2: FooterData = {
   logo: "/footer.png",
+  logoText: "SONAGIRI",
 
   cta: [
     {
@@ -90,7 +92,8 @@ export const footerData2: FooterData = {
       title: "Location",
       links: [
         {
-          label: "167&1/168, Girivalam Rd, Siva nagar, Tiruvannamalai, Tamil Nadu 606603",
+          label:
+            "167&1/168, Girivalam Rd, Siva nagar, Tiruvannamalai, Tamil Nadu 606603",
           href: contact2.addressLink,
         },
       ],
@@ -100,13 +103,13 @@ export const footerData2: FooterData = {
       title: "Contact",
       links: [
         {
-          label: "WhatsApp: " + contact2.phone,
+          label: "WhatsApp/Call: " + contact2.phone,
           href: contact2.WhatsappCta,
         },
-        {
-          label: "Call: " + contact2.phone,
-          href: contact2.callCta,
-        },
+        // {
+        //   label: "Call: " + contact2.phone,
+        //   href: contact2.callCta,
+        // },
         {
           label: contact2.email,
           href: "mailto:" + contact2.email,
