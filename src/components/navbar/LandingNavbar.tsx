@@ -38,10 +38,14 @@ const LandingNavbar = () => {
           </div> */}
           {/* LOGO */}
           <div>
-            {pathName === "/lp-2/" ? (
-              <h1 className="text-3xl md:text-4xl font-secondary text-[#6C594F] tracking-widest">
+            {pathName === "/sonagiriserene/" ? (
+              <h2 className="font-secondary text-[#6C594F] text-3xl md:text-4xl font-medium text-center leading-none tracking-[0.12em]">
                 SONAGIRI
-              </h1>
+                <span className="block w-[40%] h-[1px] bg-[#6C594F]/70 mx-auto my-1 md:my-1.5" />
+                <span className="block font-inter text-[#6C594F] text-sm md:text-base font-medium tracking-[0.28em]">
+                  SERENE
+                </span>
+              </h2>
             ) : (
               <div className="relative aspect-[2.2/1.25] md:aspect-[4/2.25] w-40 md:w-45">
                 <Image

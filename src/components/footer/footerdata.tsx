@@ -70,7 +70,7 @@ export const footerData: FooterData = {
 };
 export const footerData2: FooterData = {
   logo: "/footer.png",
-  logoText: "SONAGIRI",
+  logoText: "SONAGIRI SERENE",
 
   cta: [
     {

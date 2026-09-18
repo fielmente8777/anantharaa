@@ -10,7 +10,7 @@ const LandingFooter = () => {
   if (pathName === "/thank-you/") {
     return null;
   }
-  const isLp2 = pathName.replace(/\/$/, "") === "/lp-2";
+  const isLp2 = pathName.replace(/\/$/, "") === "/sonagiriserene";
   const data = isLp2 ? footerData2 : footerData;
   // const data =
   //   pathName.replace(/\/$/, "") === "/lp-2" ? footerData2 : footerData;
@@ -37,8 +37,12 @@ const LandingFooter = () => {
               }`}
             >
               {isLp2 ? (
-                <h2 className="font-secondary text-[#F7F3EB] text-3xl md:text-4xl tracking-[0.16em] font-medium whitespace-nowrap">
+                <h2 className="font-secondary text-[#F7F3EB] text-3xl md:text-4xl font-medium text-center leading-none tracking-[0.12em]">
                   SONAGIRI
+                  <span className="block w-[45%] h-[1px] bg-[#F7F3EB]/70 mx-auto my-1 md:my-1.5" />
+                  <span className="block font-inter text-[#F7F3EB] text-sm md:text-base font-medium tracking-[0.28em]">
+                    SERENE
+                  </span>
                 </h2>
               ) : (
                 <Image
