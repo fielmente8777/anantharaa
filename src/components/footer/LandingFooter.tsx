@@ -33,17 +33,21 @@ const LandingFooter = () => {
             </div> */}
             <div
               className={`relative w-35 aspect-[4/2.35] md:w-58 ${
-                isLp2 ? "" : "bg-white"
+                isLp2 ? "mx-auto md:mx-0" : "bg-white"
               }`}
             >
               {isLp2 ? (
-                <h2 className="font-secondary text-[#F7F3EB] text-3xl md:text-4xl font-medium text-center leading-none tracking-[0.12em]">
-                  SONAGIRI
-                  <span className="block w-[45%] h-[1px] bg-[#F7F3EB]/70 mx-auto my-1 md:my-1.5" />
-                  <span className="block font-inter text-[#F7F3EB] text-sm md:text-base font-medium tracking-[0.28em]">
-                    SERENE
-                  </span>
-                </h2>
+                <div className="flex w-full justify-center items-center">
+                  <h2 className="flex flex-col items-center text-center font-secondary text-[#F7F3EB] text-3xl md:text-4xl font-medium ">
+                    <span>SONAGIRI</span>
+
+                    <span className="w-[45%] h-[1px] bg-[#F7F3EB]/70 my-1 md:my-1.5" />
+
+                    <span className="font-inter text-[#F7F3EB] text-sm md:text-base font-medium tracking-[0.28em]">
+                      SERENE
+                    </span>
+                  </h2>
+                </div>
               ) : (
                 <Image
                   src={data.logo}
