@@ -16,7 +16,7 @@ export const contact = {
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com/",
   },
-  callCta: `tel:+91xxxxxxxx`,
+  callCta: `tel:+919403892144`,
   WhatsappCta: `https://wa.me/+919585999301?text=${enCodeText}`,
   formDomain: "hotelanantharaa10825728",
   // formDomain: "testmulti", //for testing
@@ -25,8 +25,8 @@ export const contact = {
 };
 export const contact2 = {
   phone: "+917830603080",
-  callCta: "tel:+917830603080",
-  WhatsappCta: "https://wa.me/917830603080",
+  callCta: `tel:+917830603080`,
+  WhatsappCta: `https://wa.me/917830603080?text=${enCodeText}`,
   email:"sonagirihomestay@gmail.com",
    addressLink: "https://maps.app.goo.gl/cpPjmnyigs55jrkU7",
 

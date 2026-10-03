@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CalendarIcon, CallIcon, WhatsAppIcon } from "../buttons/LinkButton";
 import { navData } from "./navData";
 import { usePathname } from "next/navigation";
+import { contact2 } from "@/utils/constent";
 
 const LandingNavbar = () => {
   const pathName = usePathname();
@@ -18,6 +19,15 @@ const LandingNavbar = () => {
   if (pathName === "/thank-you/") {
     return null;
   }
+
+  // Sonagiri Serene page uses its own phone & WhatsApp (contact2)
+  const isSonagiri = pathName === "/sonagiriserene/";
+  const navButtons = isSonagiri
+    ? [
+        { label: navData.buttons[0].label, href: contact2.callCta },
+        { label: navData.buttons[1].label, href: contact2.WhatsappCta },
+      ]
+    : navData.buttons;
 
   return (
     <header className="max_screen_width w-full bg-background">
@@ -38,7 +48,7 @@ const LandingNavbar = () => {
           </div> */}
           {/* LOGO */}
           <div>
-            {pathName === "/sonagiriserene/" ? (
+            {isSonagiri ? (
               <h2 className="font-secondary text-[#6C594F] text-3xl md:text-4xl font-medium text-center leading-none tracking-[0.12em]">
                 SONAGIRI
                 <span className="block w-[40%] h-[1px] bg-[#6C594F]/70 mx-auto my-1 md:my-1.5" />
@@ -74,7 +84,7 @@ const LandingNavbar = () => {
           </ul> */}
           {/* BUTTON */}
           <ul className="flex items-center gap-2">
-            {navData.buttons.map((link, index) => (
+            {navButtons.map((link, index) => (
               <li key={index} className="flex items-center gap-2">
                 <Link
                   href={link.href}
