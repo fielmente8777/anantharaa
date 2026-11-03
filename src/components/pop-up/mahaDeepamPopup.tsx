@@ -89,7 +89,7 @@ const MahaDeepamPopup = () => {
 
     const timer = setTimeout(() => {
       setIsOpenDeepamPopup(true);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [isLanding, expired, setIsOpenDeepamPopup]);
