@@ -15,7 +15,7 @@ interface OpenAmenityModalArray {
 type RoomDetailsType = AccommodationSectionProps["cards"][0];
 
 interface WebContextType {
-   isOpen: boolean;
+  isOpen: boolean;
   room: RoomDetailsType | null;
   openRoom: (room: RoomDetailsType) => void;
   closeRoom: () => void;
@@ -28,6 +28,9 @@ interface WebContextType {
 
   isOpenFormPopUp: boolean;
   setIsOpenFormPopUp: (open: boolean) => void;
+
+  isOpenDeepamPopup: boolean;
+  setIsOpenDeepamPopup: (open: boolean) => void;
 
   passImagesArray: string[];
   setPassImagesArray: (images: string[]) => void;
@@ -47,7 +50,6 @@ interface WebContextType {
 }
 
 const WebContext = createContext<WebContextType>({
-
   isOpen: false,
   room: null,
   openRoom: () => {},
@@ -58,6 +60,9 @@ const WebContext = createContext<WebContextType>({
 
   isOpenFormPopUp: false,
   setIsOpenFormPopUp: () => {},
+
+  isOpenDeepamPopup: false,
+  setIsOpenDeepamPopup: () => {},
 
   openImageModal: false,
   setOpenImageModal: () => {},
@@ -89,6 +94,8 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   const [openImageModal, setOpenImageModal] = useState(false);
 
   const [isOpenFormPopUp, setIsOpenFormPopUp] = useState(false);
+
+  const [isOpenDeepamPopup, setIsOpenDeepamPopup] = useState(false);
 
   const [passImagesArray, setPassImagesArray] = useState<string[]>([]);
 
@@ -139,6 +146,9 @@ export const WebProvider = ({ children }: WebProviderProps) => {
 
         isOpenFormPopUp,
         setIsOpenFormPopUp,
+
+        isOpenDeepamPopup,
+        setIsOpenDeepamPopup,
 
         openImageModal,
         setOpenImageModal,

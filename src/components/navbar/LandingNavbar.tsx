@@ -20,7 +20,7 @@ const LandingNavbar = () => {
     return null;
   }
 
-  // Sonagiri Serene page uses its own phone & WhatsApp (contact2)
+
   const isSonagiri = pathName === "/sonagiriserene/";
   const navButtons = isSonagiri
     ? [
@@ -31,7 +31,7 @@ const LandingNavbar = () => {
 
   return (
     <header className="max_screen_width w-full bg-background">
-      {/* TOP BAR */}
+
       <nav className="max_width">
         <div className="flex py-1 md:py-3 w-full items-center justify-between">
           {/* LOGO */}

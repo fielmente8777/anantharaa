@@ -1,7 +1,8 @@
 import { JSX } from "react/jsx-runtime";
 import "./sliding.title.scss";
 
-export default function SlidingTitle({
+export default function 
+SlidingTitle({
   items,
   ariaHidden = false,
 }: {

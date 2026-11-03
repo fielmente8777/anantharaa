@@ -12,6 +12,7 @@ import Script from "next/script";
 import { WebProvider } from "@/context-api/WebContext";
 import PopUpForm from "@/components/pop-up/PopUpForm";
 import Image from "next/image";
+import MahaDeepamPopup from "@/components/pop-up/mahaDeepamPopup";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -113,7 +114,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
           <LandingFooter />
           <PopUpForm />
-          <Call  />
+          <MahaDeepamPopup />
+          <Call />
           <Whatsapp />
         </WebProvider>
       </body>
