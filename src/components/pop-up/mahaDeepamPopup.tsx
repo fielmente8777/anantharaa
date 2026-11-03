@@ -78,16 +78,25 @@ const MahaDeepamPopup = () => {
     setDaysLeft(Math.ceil((start - now) / DAY));
   }, []);
 
+  // useEffect(() => {
+  //   if (!isLanding || expired) return;
+
+  //   setIsOpenDeepamPopup(true);
+  // }, [isLanding, expired, setIsOpenDeepamPopup]);
+
   useEffect(() => {
     if (!isLanding || expired) return;
 
-    setIsOpenDeepamPopup(true);
+    const timer = setTimeout(() => {
+      setIsOpenDeepamPopup(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [isLanding, expired, setIsOpenDeepamPopup]);
 
   const close = useCallback(() => {
     setIsOpenDeepamPopup(false);
   }, [setIsOpenDeepamPopup]);
-
 
   useEffect(() => {
     if (!isOpenDeepamPopup) return;
@@ -116,7 +125,6 @@ const MahaDeepamPopup = () => {
     if (e.changedTouches[0].clientY - touchStartY.current > 70) close();
     touchStartY.current = null;
   };
-
 
   const whatsappHref = useMemo(() => {
     const selected = data.nights.find((n) => n.id === night)!;
@@ -149,7 +157,6 @@ const MahaDeepamPopup = () => {
         }`}
         onClick={close}
       >
-        {/* ================= PANEL ================= */}
         <div
           onClick={(e) => e.stopPropagation()}
           className={`hide-scroll relative flex max-h-[92dvh] w-full max-w-md flex-col overflow-y-auto rounded-t-[22px] bg-deepam-night shadow-[0_-20px_60px_rgba(10,2,2,0.45)] transition-[transform,opacity] duration-500 ease-[cubic-bezier(.2,.8,.2,1)] md:h-[600px] md:max-h-[90dvh] md:max-w-[940px] md:flex-row md:overflow-hidden md:rounded-[18px] md:shadow-[0_40px_100px_rgba(10,2,2,0.55)] ${
@@ -169,9 +176,7 @@ const MahaDeepamPopup = () => {
             <DeepamCloseIcon />
           </button>
 
-          {/* ---------- LEFT / TOP : image ---------- */}
           <div className="relative h-[204px] shrink-0 overflow-hidden bg-deepam-night md:h-auto md:w-[400px]">
-            {/* mobile crop (720×440) */}
             <Image
               src={data.imageMobile}
               alt="Annamalaiyar Temple gopuram lit with lamps for Karthigai Deepam"
@@ -179,7 +184,7 @@ const MahaDeepamPopup = () => {
               sizes="448px"
               className="object-cover object-[center_30%] md:hidden"
             />
-            {/* desktop crop (720×1080) */}
+
             <Image
               src={data.image}
               alt="Annamalaiyar Temple gopuram lit with lamps for Karthigai Deepam"
@@ -201,7 +206,6 @@ const MahaDeepamPopup = () => {
               className="[--petal-drift:40px] [--petal-fall:640px] max-md:hidden"
             />
 
-            {/* mobile drag handle (swipe down to close) */}
             <div
               className="absolute inset-x-0 top-0 z-10 flex justify-center pb-6 pt-2 md:hidden"
               onTouchStart={onTouchStart}
@@ -210,7 +214,6 @@ const MahaDeepamPopup = () => {
               <span className="h-1 w-10 rounded-full bg-deepam-ivory/55" />
             </div>
 
-            {/* desktop : mantra + place */}
             <div className="absolute inset-x-8 top-[30px] hidden flex-col gap-1.5 md:flex">
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-deepam-gold">
                 {data.mantra}
@@ -228,18 +231,17 @@ const MahaDeepamPopup = () => {
                 <h2 className="font-display text-[33px] font-semibold leading-[1.05] tracking-[0.01em] text-deepam-gold">
                   {data.title}
                 </h2>
-                <div className="flex shrink-0 flex-col items-center rounded-md bg-deepam-gold px-2.5 pb-1.5 pt-[5px] text-deepam-ink">
-                  <span className="font-secondary text-[21px] font-semibold leading-none">
+                <div className="flex shrink-0 flex-col items-center rounded-md bg-deepam-gold px-3 pb-1.5 pt-1.5 text-deepam-ink-strong">
+                  <span className="font-sans text-[26px] font-extrabold leading-none tabular-nums">
                     {data.dateBig}
                   </span>
-                  <span className="text-[8.5px] font-bold uppercase tracking-[0.18em]">
+                  <span className="mt-0.5 text-[9.5px] font-bold uppercase tracking-[0.18em]">
                     {data.dateSmallMobile}
                   </span>
                 </div>
               </div>
             </div>
 
-    
             <div className="absolute inset-x-6 bottom-6 hidden flex-col gap-3 md:flex">
               {countdownLabel && (
                 <span className="inline-flex items-center gap-2 self-start rounded-full border border-deepam-gold/45 bg-deepam-night/60 py-[7px] pl-2.5 pr-[13px] text-xs font-semibold tracking-[0.03em] text-deepam-ivory">
@@ -269,7 +271,6 @@ const MahaDeepamPopup = () => {
             </div>
           </div>
 
-
           <div className="hide-scroll relative flex min-w-0 flex-1 flex-col md:overflow-y-auto">
             {/* story */}
             <div className="px-5 pb-[18px] pt-3.5 md:px-12 md:pb-6 md:pt-[38px]">
@@ -286,8 +287,8 @@ const MahaDeepamPopup = () => {
               <h2 className="hidden font-display text-[48px] font-semibold leading-[1.05] tracking-[0.02em] text-deepam-gold md:block">
                 {data.title}
               </h2>
-              <div className="mt-3.5 hidden w-fit items-baseline gap-2.5 rounded-md bg-deepam-gold px-3.5 pb-[7px] pt-1.5 text-deepam-ink md:inline-flex">
-                <span className="font-secondary text-[27px] font-semibold leading-none">
+              <div className="mt-3.5 hidden w-fit items-baseline gap-2.5 rounded-md bg-deepam-gold px-3.5 pb-[7px] pt-1.5 text-deepam-ink-strong md:inline-flex">
+                <span className="font-sans text-[32px] font-extrabold leading-none tabular-nums">
                   {data.dateBig}
                 </span>
                 <span className="text-[11px] font-bold uppercase tracking-[0.2em]">

@@ -96,7 +96,7 @@ export const mahaDeepamPopup = {
   dateSmall: "November 2026",
   dateSmallMobile: "Nov 2026",
   description:
-    "Witness the sacred flame light up Arunachala, then rest easy after your darshan — just steps from the temple.",
+    "Witness the sacred flame light up Arunachala, then rest easy after your darshan just steps from the temple.",
 
   image: "/maha-deepam/temple.jpg",
   imageMobile: "/maha-deepam/temple-mobile.jpg",
