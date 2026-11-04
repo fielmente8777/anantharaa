@@ -151,7 +151,7 @@ const MahaDeepamPopup = () => {
         aria-modal="true"
         aria-label="Maha Deepam room booking"
         aria-hidden={!isOpenDeepamPopup}
-        className={`fixed inset-0 z-[9999] flex items-end justify-center bg-p2/65 px-4 pb-3 backdrop-blur-[3px] transition-[opacity,visibility] duration-300 md:items-center md:bg-p2/70 md:p-6 md:pb-6 md:backdrop-blur-[4px] ${
+        className={`fixed inset-0 z-[9999] flex justify-center bg-p2/65 px-4 pb-3 backdrop-blur-[3px] transition-[opacity,visibility] duration-300 items-center md:bg-p2/70 md:p-6 md:pb-6 md:backdrop-blur-[4px] ${
           isOpenDeepamPopup
             ? "visible opacity-100"
             : "invisible pointer-events-none opacity-0"
@@ -160,7 +160,7 @@ const MahaDeepamPopup = () => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className={`hide-scroll relative flex max-h-[88dvh] w-full max-w-md flex-col overflow-y-auto rounded-t-[22px] md:rounded-[18px] bg-deepam-night shadow-[0_-20px_60px_rgba(10,2,2,0.45)] transition-[transform,opacity] duration-500 ease-[cubic-bezier(.2,.8,.2,1)] md:h-[600px] md:max-h-[90dvh] md:max-w-[940px] md:flex-row md:overflow-hidden md:rounded-[18px] md:shadow-[0_40px_100px_rgba(10,2,2,0.55)] ${
+          className={`hide-scroll relative flex max-h-[88dvh] w-full max-w-md flex-col overflow-y-auto rounded-[22px] md:rounded-[18px] bg-deepam-night shadow-[0_-20px_60px_rgba(10,2,2,0.45)] transition-[transform,opacity] duration-500 ease-[cubic-bezier(.2,.8,.2,1)] md:h-[600px] md:max-h-[90dvh] md:max-w-[940px] md:flex-row md:overflow-hidden md:rounded-[18px] md:shadow-[0_40px_100px_rgba(10,2,2,0.55)] ${
             isOpenDeepamPopup
               ? "translate-y-0 md:scale-100 md:opacity-100"
               : "translate-y-full md:translate-y-[18px] md:scale-[0.98] md:opacity-0"
