@@ -68,7 +68,8 @@ const MahaDeepamPopup = () => {
   const closeBtnRef = useRef<HTMLButtonElement>(null);
   const touchStartY = useRef<number | null>(null);
 
-  const isLanding = pathName === "/" || pathName === "/sonagiriserene/";
+  const isLanding = pathName === "/";
+  // const isLanding = pathName === "/" || pathName === "/sonagiriserene/";
 
   useEffect(() => {
     const now = Date.now();
