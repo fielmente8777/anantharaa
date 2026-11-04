@@ -32,6 +32,7 @@ const LandingNavbar = () => {
   return (
     <header className="max_screen_width w-full bg-background">
 
+
       <nav className="max_width">
         <div className="flex py-1 md:py-3 w-full items-center justify-between">
           {/* LOGO */}
