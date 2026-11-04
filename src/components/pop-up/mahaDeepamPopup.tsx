@@ -151,7 +151,7 @@ const MahaDeepamPopup = () => {
         aria-modal="true"
         aria-label="Maha Deepam room booking"
         aria-hidden={!isOpenDeepamPopup}
-        className={`fixed inset-0 z-[60] flex items-end justify-center bg-p2/65 backdrop-blur-[3px] transition-[opacity,visibility] duration-300 md:items-center md:bg-p2/70 md:p-6 md:backdrop-blur-[4px] ${
+        className={`fixed inset-0 z-[9999] flex items-end justify-center bg-p2/65 px-4 pb-3 backdrop-blur-[3px] transition-[opacity,visibility] duration-300 md:items-center md:bg-p2/70 md:p-6 md:pb-6 md:backdrop-blur-[4px] ${
           isOpenDeepamPopup
             ? "visible opacity-100"
             : "invisible pointer-events-none opacity-0"
@@ -160,7 +160,7 @@ const MahaDeepamPopup = () => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className={`hide-scroll relative flex max-h-[92dvh] w-full max-w-md flex-col overflow-y-auto rounded-t-[22px] bg-deepam-night shadow-[0_-20px_60px_rgba(10,2,2,0.45)] transition-[transform,opacity] duration-500 ease-[cubic-bezier(.2,.8,.2,1)] md:h-[600px] md:max-h-[90dvh] md:max-w-[940px] md:flex-row md:overflow-hidden md:rounded-[18px] md:shadow-[0_40px_100px_rgba(10,2,2,0.55)] ${
+          className={`hide-scroll relative flex max-h-[88dvh] w-full max-w-md flex-col overflow-y-auto rounded-t-[22px] md:rounded-[18px] bg-deepam-night shadow-[0_-20px_60px_rgba(10,2,2,0.45)] transition-[transform,opacity] duration-500 ease-[cubic-bezier(.2,.8,.2,1)] md:h-[600px] md:max-h-[90dvh] md:max-w-[940px] md:flex-row md:overflow-hidden md:rounded-[18px] md:shadow-[0_40px_100px_rgba(10,2,2,0.55)] ${
             isOpenDeepamPopup
               ? "translate-y-0 md:scale-100 md:opacity-100"
               : "translate-y-full md:translate-y-[18px] md:scale-[0.98] md:opacity-0"
@@ -172,7 +172,7 @@ const MahaDeepamPopup = () => {
             type="button"
             onClick={close}
             aria-label="Close"
-            className={`absolute right-3 top-3 z-20 flex size-11 items-center justify-center rounded-full border border-deepam-cream/25 bg-deepam-night/50 text-deepam-ivory transition hover:bg-deepam-night/70 active:scale-95 md:right-3.5 md:top-3.5 md:border-deepam-cream/20 md:bg-black/15 md:text-deepam-cream md:hover:bg-black/30 ${focusRing}`}
+            className={`absolute right-3 top-3 z-20 flex size-11 items-center justify-center rounded-full border border-deepam-gold/70 bg-deepam-night/85 text-deepam-gold shadow-[0_2px_10px_rgba(0,0,0,0.5)] transition hover:bg-deepam-night active:scale-95 md:right-3.5 md:top-3.5 md:border-deepam-cream/20 md:bg-black/15 md:text-deepam-cream md:shadow-none md:hover:bg-black/30 ${focusRing}`}
           >
             <DeepamCloseIcon />
           </button>
